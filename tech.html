@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Cuisine Restaurant</title>
+    <link rel="stylesheet" href="tech1.css">
+    <link rel="stylesheet" href="tech2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@100;300;400;500&family=Playfair+Display:wght@400;500;600;700;800&family=Prata&family=Sora&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <header>
+      <nav>
+        <ul class="topNavigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="tech2.html">Menu</a></li>
+          <li><a href="#">Order Now</a></li>
+          <li><a href="#"><img src="https://i.imgur.com/yxzVxBL.png" class="topNavImg one"></a></li>
+          </li><a href="#"><img src="https://i.imgur.com/5CJSd6J.png" class="topNavImg"></a></li>
+        </ul>
+        </nav>
+        <span class="logo"> Cuisine Restaurant </span>
+        <section class="mainText">
+          <h1>
+            Welcome to<br>Muruga Bhavan
+          </h1>
+          <form class="searchButton" action="#">
+            <input type="text" placeholder="Search for nearby locations" name="location">
+            <button type="submit"><i class="fa fa-search">Location</i></button>
+          </form>
+          <section class="socialMedia">
+          <section class="social">
+              <img src="https://i.imgur.com/1dZyYxo.png" class="socialIcons">
+              <span>
+                252k
+              </span>
+            </section>
+            <section class="social">
+              <img src="https://i.imgur.com/pVV4LdA.png" class="socialIcons">
+              <span>
+                62k
+              </span>
+            </section>
+            <section class="social">
+              <img src="https://i.imgur.com/XaXdCzP.png" class="socialIcons">
+              <span>
+                55k
+              </span>
+            </section>
+          </section>
+        </section>
+    </header>
+
+
+
+    <main>
+      <section class="sectionThird main">
+        <section class="contentConatiainer">
+          <section class="mainText">
+            <h2 id="about">
+              About Us
+            </h2>
+            <h3>
+              Discover Our <br>Restaurant Story
+            </h3>
+            <img  id="img" src="pic1.jpg" style="width:800px;padding:20px;"></img>
+          </section>
+            <p id="content">
+              Cuisine is a team work of Muruga Bhavan, we aim at promoting the foodstuff industry through the branches. We establish and through the new dishes, and integrate between different cultes. There are some other things that we are pretty well known for. but if you want to actually find out more, then you'll have to keep reading this paragraph. Well it looks like the paragraph is going ot end soon.
+            </p>
+            <p id="content1">
+              I hope you learned something important about our business. Because it looks like we have run out of room again to tell you more properly about who we are and what we do. Maybe you'll learn if you read the other sections though!
+            </p>
+            <a href="tech2.html">
+            <button class="btnDiscover">
+                Discover Menu
+              <img src="https://i.imgur.com/mdtAg35.png" class="btnArrow">
+            </button>
+          </a>
+        </section>
+      </section>
+      <section class="sectionThird main">
+        <section class="contentContainer">
+          <section class="mainText">
+            <h2>Book Table</h2>
+            <h3>Opening Hours</h3>
+          </section>
+          <section class="sectionCall">
+            <img src="https://i.imgur.com/87ZuSMn.png" class="iconPhone">
+            <span>
+              Call Now
+            </span>
+            <address>
+              <a href="#">+918678897890</a>
+            </address>
+        </section>
+          <section class="openingHours">
+            <span>Monday to Tuesday</span>
+            <h5>09:00 am - 10:00 pm</h5>
+          </section>
+          <section class="openingHours">
+            <span>Friday to Sunday</span>
+            <h5>11:00 am - 11:00 pm</h5>
+          </section>
+        </section>
+      </section>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>
+    <img src="https://i.imgur.com/n0Euwfk.png" class="iconStarYellow">Delicious north indian skinless chicken breasts . Cuisine is a team work of Cuisine Restaurant cafe, we aim at promoting the foodstuff industry through the branches, we establish and through the new dishes.
+</q>
+  <p class="author">- Rohan</p>
+</div>
+
+<div class="mySlides">
+  <q><img src="https://i.imgur.com/n0Euwfk.png" class="iconStarYellow">This is the original and authentic Indian restaurant I would like to say original flavour of Indian food service is five star.
+</q>
+  <p class="author">- charles</p>
+</div>
+
+<div class="mySlides">
+  <q><img src="https://i.imgur.com/n0Euwfk.png" class="iconStarYellow">
+  Delicious boneless, skinless chicken breasts and fresh mushrooms in garlic and white winesauce. Cuisine is a team work of Cuisine Restaurant cafe, we aim at promoting the foodstuff industry through the branches, we establish and through the new dishes.
+</q>
+
+  <p class="author">- Ruchi</p>
+</div>
+<img src="https://i.imgur.com/wjw6RHR.png" class="dotScroll">
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    </main>
+  </body>
+</html>
